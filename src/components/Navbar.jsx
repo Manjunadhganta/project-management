@@ -28,7 +28,7 @@ const Navbar = () =>{
 
                     <div className="hidden lg:flex justify-center gap-4 items-center">
                         {items.map((item, index)=>(
-                            <a key={index} className="text-lg">
+                            <a key={index} href={`#${item.toLowerCase()}`} className="text-lg">
                                 {item}
                             </a>
                         ))}
