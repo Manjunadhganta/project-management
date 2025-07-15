@@ -21,8 +21,8 @@ const Navbar = () =>{
 
         <>
             <div className="w-full flex justify-center mt-4 fixed">
-                <div style={{fontFamily:'"Space Grotesk", sans-serif'}} className="mx-auto gap-20 bg-white rounded-full px-7 py-4 items-center justify-between inline-flex shadow-md">
-                    <div style={{fontFamily:'"Edu NSW ACT Cursive", cursive'}} className="font-semibold text-xl text-blue-600">
+                <div style={{fontFamily:'"Space Grotesk", sans-serif'}} className="mx-auto gap-45 bg-white rounded-full px-7 py-4 items-center justify-between inline-flex shadow-md">
+                    <div style={{fontFamily:'"Edu NSW ACT Cursive", cursive'}} className="font-semibold text-xl text-[#3FBDF1]">
                         <span className="flex items-center gap-2"><FcCollaboration className="text-[25px]"/>Collabify</span>
                     </div>
 
@@ -40,14 +40,14 @@ const Navbar = () =>{
 
                     {/* Mobile Version Code */}
 
-                    <div className="lg:hidden flex justify-center items-center">
+                    <div className="lg:hidden flex items-center">
                         <button onClick={()=>setOpen(!isOpen)}>
                             {isOpen ? <IoCloseOutline size={28} /> : <IoMenu size={28} />}
                         </button>
                     </div>
 
                     {isOpen && (
-                        <div className="absolute top-17 left-0 w-full bg-white shadow-md z-50 px-6 py-5 flex flex-col lg:hidden gap-4 items-center">
+                        <div className="absolute top-17 left-0 w-full bg-white shadow-md z-50 px-8 py-5 flex flex-col lg:hidden gap-4 items-center">
                                 {items.map((item, index)=>(
                                     <a key={index} className="text-lg">
                                         {item}
@@ -59,7 +59,6 @@ const Navbar = () =>{
                             </div>
                         </div>
                     )}
-
 
                 </div>
             </div>

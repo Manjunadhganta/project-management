@@ -7,10 +7,9 @@ const Hero = () =>{
                 <div className='max-w-7xl mx-auto px-5 sm:px-6 lg:px-8'>
                     <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-20'>
 
-                    {/* Left Part */}
+                        {/* Left Part */}
                         <div className='flex justify-center items-center'>
                             <img src={project} alt="SaaS Illustration" className='w-full max-w-md' />
-
                         </div>
 
                         {/* Right Part */}
@@ -32,7 +31,6 @@ const Hero = () =>{
                             </div>
                         </div>    
                     </div>
-                    
                 </div>
             </section>
         
